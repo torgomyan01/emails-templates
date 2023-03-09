@@ -1,0 +1,900 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+  <style>
+      * {
+          font-family: 'Verdana', serif;
+          margin: 0;
+          padding: 0;
+      }
+
+      .menu {
+          width: 100%;
+          height: 75px;
+          background: #fff;
+          text-align: center;
+          padding-top: 25px;
+      }
+
+      .header {
+          height: auto;
+          background: #FFD02E;
+          padding: 46px 28px 36px 28px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+      }
+
+      .header-text {
+          display: inline-block;
+          width: 49%;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 28px;
+          line-height: 36px;
+          color: #3D3B57;
+          margin: 0;
+      }
+
+      .header-img {
+          background: #E0E0E0;
+          border-radius: 20px;
+          width: 49%;
+      }
+
+      .content-text {
+          background: #fff;
+          padding: 56px 28px 36px 28px;
+      }
+
+      .content-text ul {
+          margin-left: 20px;
+      }
+
+      .content-text ul li {
+          font-family: 'Arial', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          color: #3D3B57;
+      }
+
+      .content-text-title {
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 36px;
+          color: #3D3B57;
+          margin-bottom: 35px;
+      }
+
+      .content-text-subtitle {
+          font-family: 'Arial', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          color: #3D3B57;
+          margin-bottom: 30px;
+      }
+
+      .section-title {
+          font-family: 'Verdana', serif;
+          font-weight: 700;
+          color: #3D3B57;
+      }
+
+      .section-text {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          letter-spacing: 0.1px;
+          color: #3D3B57;
+      }
+
+      .video-block {
+          background: #eeeff1;
+          padding: 30px 28px 32px 28px;
+      }
+
+      .video-block-img {
+          width: 100%;
+          cursor: pointer;
+      }
+
+      .view-block {
+          font-family: 'Arial', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 32px;
+          letter-spacing: 0.1px;
+          color: #8E909E;
+      }
+
+      .video-block-button {
+          margin-top: 36px;
+          text-align: center;
+      }
+
+      .video-block-button-btn {
+          border: 0;
+          background: #3D3B57;
+          border-radius: 62px;
+          text-align: center;
+          font-family: 'Verdana', serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          color: #FFFFFF;
+          padding: 24px 50px;
+          cursor: pointer;
+      }
+
+      .news {
+          padding: 36px 28px 36px 28px;
+          background: #fff;
+      }
+
+      .news-block {
+          background: #F9F9F9;
+          border: 1px solid rgba(142, 144, 158, 0.15);
+          border-radius: 10px;
+          padding: 0 0 31px 0;
+      }
+
+      .news-block-img {
+          width: 100%;
+          border-radius: 10px 10px 0 0;
+      }
+
+      .two-block {
+          padding: 22px 28px 30px 28px;
+          display: flex;
+      }
+
+      .percents {
+          width: 100%;
+          margin-top: 50px;
+      }
+
+      .percents-block {
+          padding: 25px;
+          height: 200px;
+          width: 50%;
+      }
+
+      .percents-percent {
+          font-family: 'Arial', serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 60px;
+          line-height: 45px;
+          text-align: center;
+          color: #FFD02E;
+          margin-top: 25px;
+      }
+
+      .percents-text {
+          font-family: 'Arial', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 28px;
+          text-align: center;
+          color: #FFFFFF;
+          margin-top: 18px;
+      }
+
+      .footer {
+          width: 100%;
+          background: #fff;
+          padding-bottom: 64px;
+      }
+
+      .footer-text {
+          font-family: 'Arial', serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 32px;
+          text-align: center;
+          letter-spacing: 0.1px;
+          color: #3D3B57;
+          padding-top: 30px;
+          margin-bottom: 30px;
+      }
+      @media (max-width: 590px){
+          .news-block{
+              width: 100% !important;
+              margin-bottom: 20px !important;
+          }
+          .new-block-parent{
+              display: block !important;
+          }
+          .yellow-section{
+              display: block !important;
+          }
+          .yellow-section-item{
+              width: 100% !important;
+              margin-bottom: 40px !important;
+          }
+          .yellow-section-item img{
+              width: 50% !important;
+          }
+          .percents-black{
+              padding: 46px 15px 46px 15px !important;
+          }
+          .yellow-section-title{
+              padding-top: 5px !important;
+          }
+      }
+      @media (max-width: 555px){
+          .section-adhoc{
+              display: block !important;
+              margin-top: 30px !important;
+          }
+          .section-adhoc img{
+              width: 100% !important;
+              margin-left: 0 !important;
+              margin-right: 0 !important;
+          }
+          .section-adhoc .text-start{
+              display: none;
+          }
+          .section-adhoc .text-start-bottom{
+              display: block !important;
+          }
+      }
+      @media (max-width: 500px){
+          .percents-row{
+              display:  block !important;
+          }
+          .percents-block{
+              width: 100% !important;
+              border: 0 !important;
+              border-bottom: 1px solid #8E909E !important;
+              padding: 0 !important;
+              height: 170px !important;
+          }
+          .header{
+              display: block !important;
+          }
+          .header-text{
+              width: 100% ;
+              margin-bottom: 20px ;
+          }
+          .header-img{
+              width: 100% ;
+              border-radius: unset;
+              background: transparent;
+          }
+      }
+      @media (max-width: 425px){
+          .two-block{
+              display: block;
+          }
+          .news-block{
+              width: 100% !important;
+              margin-bottom: 20px;
+          }
+          .yellow-block{
+              padding: 20px 15px 0 15px !important;
+          }
+          .section-title{
+              font-size: 16px !important;
+              line-height: 26px !important;
+              margin-bottom: 14px !important;
+          }
+          .section-text {
+              font-size: 16px !important;
+              line-height: 26px !important;
+          }
+          .content-text-title{
+              font-size: 20px !important;
+              line-height: 30px !important;
+              margin-bottom: 30px !important;
+          }
+          .content-text-subtitle {
+              font-size: 16px;
+              line-height: 26px;
+          }
+          .section-adhoc p{
+              font-size: 16px !important;
+              line-height: 26px !important;
+          }
+          .news, .video-block, .logo-section{
+              padding: 20px 15px 20px 15px !important;
+          }
+          .two-block{
+              padding: 20px 15px 20px 15px !important;
+          }
+          .content-text{
+              padding: 20px 15px 20px 15px !important;
+          }
+          .header{
+              padding: 20px 15px 20px 15px !important;
+          }
+          .header-text{
+              font-size: 23px !important;
+          }
+          .yellow-section-parent{
+              padding-bottom: 0 !important;
+              padding-left: 15px !important;
+              padding-right: 15px !important;
+              text-align: center;
+          }
+          .percents{
+              margin-top: 0;
+          }
+          .video-block-button-btn {
+              font-size: 13px;
+              line-height: unset !important;
+          }
+      }
+
+  </style>
+  <title>Opendecide Email Template</title>
+</head>
+<body>
+
+<table style="width: 100%; max-width: 590px; margin: 0 auto;" border="0" cellpadding="0" cellspacing="0">
+  <tbody style="width: 100%;">
+  <tr>
+    <td>
+      <div class="menu">
+        <img src="https://i.imgur.com/TZkOKtb.png" alt="logo">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="header">
+        <p class="header-text">
+          Explorez le fonctionnement de vos équipes et libérez leur potentiel
+        </p>
+        <img class="header-img" src="https://i.imgur.com/c4hM3AK.png" alt="header image">
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="content-text">
+        <p class="content-text-title">Title ipsum adhoc sit amet et pluribus unum nunc</p>
+        <p class="content-text-subtitle">
+          OpenDecide analyse la dynamique collective, parce qu'une organisation est bien plus qu'une somme d'individus
+          et que la performance collective est la clef du succès.
+        </p>
+        <p class="content-text-subtitle">
+          Grâce aux dernières découvertes en science du comportement organisationnel, on peut maintenant mesurer,
+          modéliser et améliorer la performance des équipes, comme jamais auparavant.
+        </p>
+        <ul style="list-style: decimal;">
+          <li>Questionnaire</li>
+          <li>Interprétation des résultats</li>
+          <li>Débriefing du manager</li>
+          <li>Débriefing de l'équipe</li>
+          <li>Implémentation</li>
+        </ul>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="video-block">
+        <a href="#">
+          <img src="https://i.imgur.com/i9MUYZN.png" alt="video" class="video-block-img">
+        </a>
+        <p class="section-title" style="margin-top: 42px;font-size: 22px; margin-bottom: 16px;">Accompagnez les équipes
+          en toute simplicité</p>
+        <p class="section-text">
+          Obtenez une vue d’ensemble des équipes de votre organisation et comprenez comment elles souhaitent voir
+          évoluer leurs modes de fonctionnement.
+        </p>
+        <div class="view-block" style="margin-top: 16px;">
+          <img src="https://i.imgur.com/8oKxbDm.png" alt="View" style="margin-right: 12px;margin-bottom: -3px">
+          2 minutes watch
+        </div>
+        <div class="video-block-button">
+          <button class="video-block-button-btn">Découvrez la plateforme</button>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="news">
+      <div class="news-block">
+        <img src="https://i.imgur.com/wnt7AzF.png" alt="news-block" class="news-block-img">
+        <div style="padding: 40px 37px 0 37px" class="yellow-block">
+          <p class="section-title" style="font-size: 18px;line-height: 32px;margin-bottom: 24px;">
+            Lorem ipsum dolor sit amet sed eiusmod tempor adhoc
+          </p>
+          <p class="section-text" style="margin-bottom: 17px;">
+            xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+          </p>
+          <div class="view-block" style="margin-top: 16px;">
+            <img src="https://i.imgur.com/29q3Tg0.png" alt="View" style="margin-right: 12px;margin-bottom: -5px">
+            7 minute read
+          </div>
+          <a href="#"
+             style="font-weight: 700;font-size: 18px;line-height: 32px;text-decoration-line: underline;color: #3D3B57;margin-top: 13px;">Read
+            now</a>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="video-block" style="background: #fff;padding-top: 0;">
+        <a href="#">
+          <img src="https://i.imgur.com/i9MUYZN.png" alt="video" class="video-block-img">
+        </a>
+        <p class="section-title" style="margin-top: 42px;font-size: 22px; margin-bottom: 16px;">Accompagnez les équipes
+          en toute simplicité</p>
+        <p class="section-text">
+          Obtenez une vue d’ensemble des équipes de votre organisation et comprenez comment elles souhaitent voir
+          évoluer leurs modes de fonctionnement.
+        </p>
+        <div class="view-block" style="margin-top: 16px;">
+          <img src="https://i.imgur.com/8oKxbDm.png" alt="View" style="margin-right: 12px;margin-bottom: -3px">
+          2 minutes watch
+        </div>
+        <div class="video-block-button">
+          <button class="video-block-button-btn">Découvrez la plateforme</button>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="background: #fff">
+      <div class="two-block">
+        <div class="news-block" style="display: inline-block;width: 50%;margin-right: 14px;">
+          <img src="https://i.imgur.com/wnt7AzF.png" alt="news-block" class="news-block-img">
+          <div style="padding: 23px 18px 0 18px">
+            <p class="section-title" style="font-size: 16px;line-height: 26px;margin-bottom: 5px;">
+              Lorem ipsum dolor sit amet sed eiusmod tempor adhoc
+            </p>
+            <p class="section-text" style="font-size: 18px;line-height: 28px;">
+              xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia...
+            </p>
+            <div class="view-block" style="margin-top: 16px;">
+              <img src="https://i.imgur.com/29q3Tg0.png" alt="View" style="margin-right: 12px;margin-bottom: -5px">
+              4 minute read
+            </div>
+            <a href="#"
+               style="font-weight: 700;font-size: 18px;line-height: 32px;text-decoration-line: underline;color: #3D3B57;margin-top: 13px;">Read
+              now</a>
+          </div>
+        </div>
+        <div class="news-block" style="display: inline-block;width: 50%">
+          <img src="https://i.imgur.com/sdGfKGE.png" alt="news-block" class="news-block-img">
+          <div style="padding: 23px 18px 0 18px">
+            <p class="section-title" style="font-size: 16px;line-height: 26px;margin-bottom: 5px;">
+              Lorem ipsum dolor sit amet sed eiusmod tempor adhoc
+            </p>
+            <p class="section-text" style="font-size: 18px;line-height: 28px;margin-bottom: 42px;">
+              xcepteur sint occaecat cupidatat non proident, sunt in culpa qui...
+            </p>
+            <div class="view-block" style="margin-top: 16px;">
+              <img src="https://i.imgur.com/29q3Tg0.png" alt="View" style="margin-right: 12px;margin-bottom: -5px">
+              5 minute read
+            </div>
+            <a href="#"
+               style="font-weight: 700;font-size: 18px;line-height: 32px;text-decoration-line: underline;color: #3D3B57;margin-top: 13px;">Read
+              now</a>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="news" style="background: #FFD02E;">
+      <p
+        style="text-align: center ; font-weight: 700; font-size: 22px; line-height: 36px; color: #3D3B57; padding-top: 8px; padding-bottom: 34px;">
+        Next event coming soon!
+      </p>
+      <div class="news-block">
+        <img src="https://i.imgur.com/wnt7AzF.png" alt="news-block" class="news-block-img">
+        <div style="padding: 40px 37px 0 37px" class="yellow-block">
+          <p class="section-title" style="font-size: 18px;line-height: 32px;margin-bottom: 24px;">
+            Lorem ipsum dolor sit amet sed eiusmod tempor adhoc
+          </p>
+          <p class="section-text" style="margin-bottom: 17px;">
+            xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+          </p>
+          <div class="view-block" style="margin-top: 23px;">
+            <img src="https://i.imgur.com/bn5aQFm.png" alt="View" style="margin-right: 12px;margin-bottom: -5px">
+            February 12, 2023
+          </div>
+          <div class="view-block" style="margin-top: 16px;">
+            <img src="https://i.imgur.com/0LgtEay.png" alt="View" style="margin-right: 12px;margin-bottom: -5px">
+            10:30am EST — Via Zoom
+          </div>
+          <div class="video-block-button">
+            <button class="video-block-button-btn" style="background: #FFD02E; color: #3D3B57; ">Sign me up</button>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="background: #fff">
+      <p style="
+font-weight: 400;
+font-size: 22px;
+line-height: 36px;
+text-align: center;
+color: #3D3B57;
+margin-top: 36px;
+margin-bottom: 5px;
+">Other events</p>
+      <div class="two-block">
+        <div class="news-block" style="display: inline-block;width: 50%;margin-right: 14px;">
+          <img src="https://i.imgur.com/wnt7AzF.png" alt="news-block" class="news-block-img">
+          <div style="padding: 23px 18px 0 18px">
+            <p class="section-title" style="font-size: 16px;line-height: 26px;margin-bottom: 5px;">
+              Lorem ipsum dolor sit amet sed eiusmod tempor adhoc
+            </p>
+            <p class="section-text" style="font-size: 18px;line-height: 28px;">
+              xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia...
+            </p>
+            <div class="view-block" style="margin-top: 23px;font-size: 18px;color: #3D3B57;">
+              <img src="https://i.imgur.com/bn5aQFm.png" alt="View" style="margin-right: 5px;margin-bottom: -5px">
+              February 12, 2023
+            </div>
+            <div class="view-block" style="font-size: 18px;color: #3D3B57;display: flex;">
+              <img src="https://i.imgur.com/0LgtEay.png" alt="View" style="margin-right: 13px;margin-top: 5px;"
+                   width="25" height="25">
+              <p>
+                10:30am EST <br> Via Zoom
+              </p>
+            </div>
+            <a href="#"
+               style="font-family: 'Arial',serif;font-weight: 700;font-size: 18px;line-height: 32px;text-decoration-line: underline;color: #3D3B57;margin-top: 15px;text-align: center;display: block">I’m
+              interested</a>
+
+          </div>
+        </div>
+        <div class="news-block" style="display: inline-block;width: 50%">
+          <img src="https://i.imgur.com/sdGfKGE.png" alt="news-block" class="news-block-img">
+          <div style="padding: 23px 18px 0 18px">
+            <p class="section-title" style="font-size: 16px;line-height: 26px;margin-bottom: 5px;">
+              Lorem ipsum dolor sit amet sed eiusmod tempor adhoc
+            </p>
+            <p class="section-text" style="font-size: 18px;line-height: 28px;margin-bottom: 42px;">
+              xcepteur sint occaecat cupidatat non proident, sunt in culpa qui...
+            </p>
+            <div class="view-block" style="margin-top: 23px;font-size: 18px;color: #3D3B57;">
+              <img src="https://i.imgur.com/bn5aQFm.png" alt="View" style="margin-right: 5px;margin-bottom: -5px">
+              February 12, 2023
+            </div>
+            <div class="view-block" style="font-size: 18px;color: #3D3B57;display: flex;">
+              <img src="https://i.imgur.com/0LgtEay.png" alt="View" style="margin-right: 13px;margin-top: 5px;"
+                   width="25" height="25">
+              <p>
+                10:30am EST <br> Via Zoom
+              </p>
+            </div>
+            <a href="#"
+               style="font-family: 'Arial',serif;font-weight: 700;font-size: 18px;line-height: 32px;text-decoration-line: underline;color: #3D3B57;margin-top: 15px;text-align: center;display: block">I’m
+              interested</a>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td class="news" style="
+    background: #eeeff1;
+    padding: 30px 28px 32px 28px;
+">
+      <div class="news-block">
+        <img src="https://i.imgur.com/wnt7AzF.png" alt="news-block" class="news-block-img">
+        <div style="padding: 40px 37px 0 37px" class="yellow-block">
+          <p class="section-title" style="font-size: 18px;line-height: 32px;margin-bottom: 24px;">
+            Lorem ipsum dolor sit amet sed eiusmod tempor adhoc
+          </p>
+          <p class="section-text" style="margin-bottom: 17px;">
+            xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+          </p>
+          <div class="view-block" style="margin-top: 16px;">
+            <img src="https://i.imgur.com/29q3Tg0.png" alt="View" style="margin-right: 12px;margin-bottom: -5px">
+            5 minute read
+          </div>
+          <a href="#"
+             style="font-weight: 700;font-size: 18px;line-height: 32px;text-decoration-line: underline;color: #3D3B57;margin-top: 13px;">Read
+            now</a>
+        </div>
+      </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td style="background: #fff">
+      <div class="two-block">
+        <div class="news-block" style="display: inline-block;width: 50%;margin-right: 14px;">
+          <img src="https://i.imgur.com/toupYUW.png" alt="news-block" class="news-block-img">
+          <div style="padding: 23px 18px 0 18px">
+            <p class="section-title" style="font-size: 16px;line-height: 26px;margin-bottom: 5px;">
+              Lorem ipsum dolor sit amet sed eiusmod tempor adhoc
+            </p>
+            <p class="section-text" style="font-size: 18px;line-height: 28px;">
+              xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia...
+            </p>
+            <div class="view-block" style="margin-top: 16px;">
+              <img src="https://i.imgur.com/8oKxbDm.png" alt="View" style="margin-right: 12px;margin-bottom: -3px">
+              4 minutes watch
+            </div>
+            <a href="#"
+               style="font-weight: 700;font-size: 18px;line-height: 32px;text-decoration-line: underline;color: #3D3B57;margin-top: 13px;">Watch
+              now</a>
+          </div>
+        </div>
+        <div class="news-block" style="display: inline-block;width: 50%">
+          <img src="https://i.imgur.com/sdGfKGE.png" alt="news-block" class="news-block-img">
+          <div style="padding: 23px 18px 0 18px">
+            <p class="section-title" style="font-size: 16px;line-height: 26px;margin-bottom: 5px;">
+              Lorem ipsum dolor sit amet sed eiusmod tempor adhoc
+            </p>
+            <p class="section-text" style="font-size: 18px;line-height: 28px;margin-bottom: 42px;">
+              xcepteur sint occaecat cupidatat non proident, sunt in culpa qui...
+            </p>
+            <div class="view-block" style="margin-top: 16px;">
+              <img src="https://i.imgur.com/29q3Tg0.png" alt="View" style="margin-right: 12px;margin-bottom: -5px">
+              5 minute read
+            </div>
+            <a href="#"
+               style="font-weight: 700;font-size: 18px;line-height: 32px;text-decoration-line: underline;color: #3D3B57;margin-top: 13px;">Watch
+              now</a>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="content-text" style="padding-top: 8px;">
+        <p class="content-text-title" style="margin-bottom: 54px;">Title ipsum adhoc sit amet et pluribus unum nunc</p>
+        <p class="content-text-subtitle">
+          OpenDecide analyse la dynamique collective, parce qu'une organisation est
+          bien plus qu'une somme d'individus et que la performance collective est la clef du succès.
+        </p>
+        <p class="content-text-subtitle" style="margin-bottom: 0">
+          Grâce aux dernières découvertes en science du comportement organisationnel, on peut maintenant mesurer,
+          modéliser et
+          améliorer la performance des équipes, comme jamais auparavant.
+        </p>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="section-adhos" style="background: #fff; padding: 0 28px 36px 28px;">
+        <p style="font-weight: 700; font-size: 22px; line-height: 36px; text-align: center; color: #3D3B57;">
+          Section adhoc sit amet
+        </p>
+        <div style="display: flex; margin-top: 62px;" class="section-adhoc">
+          <img src="https://i.imgur.com/nnK9RPe.png" alt="" style="width: 50%; margin-right: 14px; ">
+          <p style="font-weight: 400;font-size: 18px;line-height: 32px;color: #3D3B57; padding-top: 15px; ">
+
+            OpenDecide analyse la dynamique collective, parce qu'une organisation est bien plus
+            qu'une somme d'individus et que la performance collective est la clef du succès.
+
+          </p>
+        </div>
+        <div class="video-block-button" style="margin-top: 55px;">
+          <button class="video-block-button-btn" style="background: #FFD02E; color: #3D3B57; ">Lorem ipsum</button>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="section-adhos" style="background: #fff; padding: 53px 28px 36px 28px;">
+        <div style="display: flex; padding-top: 0;" class="section-adhoc">
+          <p style="font-weight: 400;font-size: 18px;line-height: 32px;color: #3D3B57; padding-top: 15px; " class="text-start">
+
+            OpenDecide analyse la dynamique collective, parce qu'une organisation est bien plus qu'une somme
+            d'individus et que la performance collective est la clef du succès.
+
+          </p>
+          <img src="https://i.imgur.com/nnK9RPe.png" alt="" style="width: 50%; margin-left: 14px; " class="img-right">
+          <p style="font-weight: 400;font-size: 18px;line-height: 32px;color: #3D3B57; padding-top: 15px;display: none " class="text-start-bottom">
+
+            OpenDecide analyse la dynamique collective, parce qu'une organisation est bien plus qu'une somme
+            d'individus et que la performance collective est la clef du succès.
+
+          </p>
+        </div>
+        <div class="video-block-button" style="margin-top: 55px;">
+          <button class="video-block-button-btn" style="background: #FFD02E; color: #3D3B57; ">Lorem ipsum</button>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div style="display: flex;padding: 23px 18px 0 18px; background: #FFFFFF" class="new-block-parent">
+        <div class="news-block" style="display: inline-block;width: 33.3333333%; margin-right: 13px;">
+          <img src="https://i.imgur.com/sdGfKGE.png" alt="news-block" class="news-block-img">
+          <div style="padding: 23px 18px 0 18px">
+            <p class="section-title" style="font-size: 13px;line-height:  26px;margin-bottom: 5px; font-weight: 700;">
+              Lorem ipsum dolor sit amet...
+            </p>
+            <p class="section-text" style="font-size: 14px;line-height: 28px;margin-bottom: 42px;">
+              xcepteur sint occaecat cupidatat non proident, sunt in culpa qui...
+            </p>
+            <div class="view-block" style="margin-top: 16px;font-size: 14px;">
+              <img src="https://i.imgur.com/29q3Tg0.png" alt="View" style="margin-right: 12px;margin-bottom: -5px">
+              5 minute read
+            </div>
+            <a href="#"
+               style="font-weight: 700;font-size: 14px;line-height: 32px;text-decoration-line: underline;color: #3D3B57;margin-top: 13px;">Read
+              now</a>
+          </div>
+        </div>
+        <div class="news-block" style="display: inline-block;width: 33.3333333%; margin-right: 13px;">
+          <img src="https://i.imgur.com/sdGfKGE.png" alt="news-block" class="news-block-img">
+          <div style="padding: 23px 18px 0 18px">
+            <p class="section-title" style="font-size: 13px;line-height:  20px;margin-bottom: 5px; font-weight: 700;">
+              Lorem sed eiusmod tempor...
+            </p>
+            <p class="section-text" style="font-size: 14px;line-height: 28px;margin-bottom: 42px;">
+              xcepteur sint occaecat cupidatat non proident, sunt in culpa qui...
+            </p>
+            <div class="view-block" style="margin-top: 16px;font-size: 14px;">
+              <img src="https://i.imgur.com/29q3Tg0.png" alt="View" style="margin-right: 12px;margin-bottom: -5px">
+              5 minute read
+            </div>
+            <a href="#"
+               style="font-weight: 700;font-size: 14px;line-height: 32px;text-decoration-line: underline;color: #3D3B57;margin-top: 13px;">Read
+              now</a>
+          </div>
+        </div>
+        <div class="news-block" style="display: inline-block;width: 33.3333333%">
+          <img src="https://i.imgur.com/sdGfKGE.png" alt="news-block" class="news-block-img">
+          <div style="padding: 23px 18px 0 18px">
+            <p class="section-title" style="font-size: 13px;line-height:  26px;margin-bottom: 5px; font-weight: 700;">
+              Dolor sit amet sed eiusmod tempor
+            </p>
+            <p class="section-text" style="font-size: 14px;line-height: 28px;margin-bottom: 42px;">
+              xcepteur sint occaecat cupidatat non proident, sunt in culpa qui...
+            </p>
+            <div class="view-block" style="margin-top: 16px;font-size: 14px;">
+              <img src="https://i.imgur.com/29q3Tg0.png" alt="View" style="margin-right: 12px;margin-bottom: -5px">
+              5 minute read
+            </div>
+            <a href="#"
+               style="font-weight: 700;font-size: 14px;line-height: 32px;text-decoration-line: underline;color: #3D3B57;margin-top: 13px;">Read
+              now</a>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="background: #FFFFFF;padding: 40px 28px 32px 28px;" class="yellow-section-parent">
+      <p style="font-weight: 700; font-size: 22px; line-height: 36px; text-align: center; color: #3D3B57;">
+        Section adhoc sit amet
+      </p>
+      <div style="display: flex; margin-top: 53px; " class="yellow-section">
+        <div style="width: 33.3333333%; margin-right:26px;" class="yellow-section-item">
+          <div style="text-align: center">
+            <img src="https://i.imgur.com/27LU1UX.png" alt="" style="width: 80%">
+          </div>
+          <p style="font-weight: 700; font-size: 14px; line-height: 20px; color: #3D3B57; padding-top: 48px;" class="yellow-section-title">
+            Lorem ipsum dolor sit amet...
+          </p>
+          <p style="font-weight: 400; font-size: 14px; line-height: 20px; color: #3D3B57; padding-top: 30px;">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+            aperiam.
+          </p>
+        </div>
+
+        <div style="width: 33.3333333%; margin-right:26px;" class="yellow-section-item">
+          <div style="text-align: center">
+            <img src="https://i.imgur.com/ivCHMKh.png" alt="" style="width: 80%">
+          </div>
+          <p style="font-weight: 700; font-size: 14px; line-height: 20px; color: #3D3B57; padding-top: 48px;" class="yellow-section-title">
+            Lorem ipsum dolor sit amet...
+          </p>
+          <p style="font-weight: 400; font-size: 14px; line-height: 20px; color: #3D3B57; padding-top: 30px;">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+            aperiam.
+          </p>
+        </div>
+
+        <div style="width: 33.3333333%" class="yellow-section-item">
+          <div style="text-align: center">
+            <img src="https://i.imgur.com/mEylKit.png" alt="" style="width: 80%">
+          </div>
+          <p style="font-weight: 700; font-size: 14px; line-height: 20px; color: #3D3B57; padding-top: 48px;" class="yellow-section-title">
+            Lorem ipsum dolor sit amet...
+          </p>
+          <p style="font-weight: 400; font-size: 14px; line-height: 20px; color: #3D3B57; padding-top: 30px;">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+            aperiam.
+          </p>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td style="background: #FFFFFF;padding: 40px 28px 32px 28px;" class="logo-section">
+      <p style="font-weight: 700; font-size: 22px; line-height: 36px; text-align: center; color: #3D3B57;">
+        Clients ipsum dolor sit amet
+      </p>
+      <img src="https://i.imgur.com/l7ZunHH.png" alt="" style="margin-top: 33px;width: 100%">
+    </td>
+  </tr>
+  <tr>
+    <td style="background: #3D3B57;padding: 56px 28px 56px 28px;" class="percents-black">
+      <p style="
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 36px;
+      text-align: center;
+      color: #FFFFFF;
+    ">It’s all in the numbers</p>
+
+      <div class="percents">
+        <div style="display: flex;" class="percents-row">
+          <div class="percents-block" style="border-right: 1px solid #8E909E;">
+            <p class="percents-percent">6K</p>
+            <p class="percents-text">
+              Lorem ipsum dolor sit amet draco dormiens
+            </p>
+          </div>
+          <div class="percents-block" style="border-bottom: 1px solid #8E909E;">
+            <p class="percents-percent">75%</p>
+            <p class="percents-text">
+              Lorem ipsum dolor sit amet
+            </p>
+          </div>
+        </div>
+        <div style="display: flex;" class="percents-row">
+          <div class="percents-block" style="border-top: 1px solid #8E909E;margin-top: -1px;">
+            <p class="percents-percent">2.5</p>
+            <p class="percents-text">
+              Lorem ipsum dolor sit amet draco dormiens
+            </p>
+          </div>
+          <div class="percents-block" style="border-left: 1px solid #8E909E;">
+            <p class="percents-percent">$400K</p>
+            <p class="percents-text">
+              Lorem ipsum dolor sit amet
+            </p>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="footer">
+        <p class="footer-text">Let’s keep in touch!</p>
+        <div style="text-align: center">
+          <a href="#" style="margin-right: 30px;text-decoration: none ">
+            <img src="https://i.imgur.com/eTrWWdR.png" alt="Twiter">
+          </a>
+          <a href="#" style="text-decoration: none ">
+            <img src="https://i.imgur.com/uWy4G96.png" alt="Linkedin">
+          </a>
+        </div>
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
