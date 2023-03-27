@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <title>Entrepreneurs march v2</title>
+
+  <style>
+      * {
+          font-family: 'Inter', sans-serif;
+          margin: 0;
+          padding: 0;
+      }
+
+      body {
+          background: #E1E2E9;
+      }
+
+      .body-template {
+          width: 100%;
+          max-width: 700px;
+          margin: 0 auto;
+          background: #fff;
+      }
+
+      .header {
+          border-bottom: 1px solid #CDD0D2;
+          padding: 25px 25px;
+      }
+
+      .header-view-web {
+          text-align: right;
+          text-decoration-line: underline;
+          text-transform: uppercase;
+          color: #5152FB;
+          float: right;
+          font-weight: 600;
+          font-size: 10px;
+          margin-top: 10px;
+      }
+
+      .body-header {
+          padding: 0 25px;
+          margin-top: 0;
+      }
+
+      .body-header-image {
+          background: url("https://i.imgur.com/k6zWEDo.png") no-repeat right bottom;
+          background-size: inherit;
+          height: 524px;
+          border-radius: 20px;
+      }
+
+      .body-header-image h1 {
+          font-weight: 400;
+          color: #FFFFFF;
+          padding-top: 25px;
+          margin-left: 34px;
+          letter-spacing: -0.5px;
+          width: 90%;
+      }
+      .text-body{
+          margin-top: 49px;
+          padding: 0 60px;
+      }
+      .text-body p{
+          margin-bottom: 30px;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 152.5%;
+          color: #000000;
+      }
+      .nt-logo-black{
+          display: inline-block;
+      }
+      .nt-logo-white{
+          display: none;
+      }
+      .fs-52{
+          font-size: 52px;
+      }
+      .fs-35{
+          font-size: 35px;
+      }
+      .list{
+
+      }
+      .list li{
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 142.5%;
+          color: #0E1024;
+          margin-bottom: 6px;
+          display: flex;
+      }
+      .list li img{
+          margin-top: 5px !important;
+      }
+      .btn-now{
+          width: 378px;
+          height: 51px;
+          text-align: center;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 130%;
+          border-radius: 100px;
+          background: transparent;
+          border: 1px solid #000;
+      }
+      .ping-code{
+          width: 378px;
+          height: 51px;
+          background: url("https://i.imgur.com/YHE4MAs.png") no-repeat center;
+          background-size: 100% 100%;
+          text-align: center;
+          margin: 16px auto 47px;
+
+      }
+      .ping-code-code{
+          display: flex;
+          margin: 0 auto;
+          width: 80%;
+      }
+      .ping-code-btn-code{
+          background: transparent;
+          border: 0.809139px dashed #FFFFFF;
+          border-radius: 8.09139px;
+          padding: 13px 17px;
+          font-weight: 800;
+          font-size: 18px;
+          line-height: 0;
+          text-align: center;
+          color: #FFFFFF;
+          height: 40px;
+          margin-top: 7px;
+      }
+      .ping-code-text{
+          font-weight: 400;
+          font-size: 12.5029px;
+          line-height: 109%;
+          color: #FFFFFF;
+          text-align: start;
+          margin-left: 5px;
+          margin-top: 13px;
+      }
+      .body-header-image .subtitle-header{
+          margin-left: 34px;
+          font-weight: 400;
+          font-size: 37.92px;
+          line-height: 36px;
+          color: #FFFFFF;
+          margin-top: 40%;
+          display: block;
+          width: 315px;
+      }
+      @media (max-width: 684px){
+          .body-header-image{
+              height: 500px;
+          }
+          .subtitle-header{
+              width: 95%;
+              display: block;
+          }
+      }
+
+
+
+      @media (max-width: 610px){
+          .header {
+              width: calc(100% - 50px);
+          }
+          .body-header {
+              width: 100%;
+              padding: 0;
+          }
+          .body-header-image{
+              height: 700px;
+              background-image: url(https://i.imgur.com/emmBmBC.png);
+              background-size: 100% auto;
+              border-radius: 20px;
+              background-position: left bottom;
+          }
+          .body-header-image .subtitle-header{
+              margin-top: 75%;
+          }
+
+          .body-header-image .fs-52{
+              font-size: 42px;
+          }
+          .body-header-image .fs-35{
+              font-size: 33px;
+          }
+          .text-body{
+              padding: 0 30px;
+          }
+          .text-body p{
+              font-weight: 400;
+              font-size: 16px;
+              margin-bottom: 25px;
+          }
+          .footer-body{
+              padding: 44px 26px !important;
+          }
+          .footer-nt-name{
+              display: none !important;
+          }
+          .footer hr{
+              display: none !important;
+          }
+          .footer-text{
+              display: none !important;
+          }
+          .footer-close{
+              display: none !important;
+          }
+          .footer-bottom-text{
+              text-align: center !important;
+              margin-top: 20px;
+          }
+          .footer-bottom-text a{
+              text-decoration: none !important;
+              margin-right: 10px;
+          }
+          .footer-title{
+              display: none !important;
+          }
+          .footer-logo{
+              margin-bottom: 30px;
+          }
+          .body-header{
+              margin-top: -1px !important;
+          }
+      }
+
+      @media (max-width: 574px){
+          .body-header-image .subtitle-header{
+              margin-top: 5%;
+          }
+      }
+
+      @media (max-width: 425px) {
+          .body-header-image .subtitle-header{
+              margin-top: 15%;
+              margin-left: 15px;
+          }
+          .btn-now{
+              width: 100%;
+          }
+          .ping-code{
+              width: 100%
+          }
+          .ping-code-btn-code {
+              padding: 8px 4px;
+              font-size: 14px;
+              height: 35px;
+              margin-top: 9px;
+          }
+          .header {
+              width: calc(100% - 30px);
+              padding: 25px 15px;
+          }
+          .body-header-image h1 {
+              margin-left: 15px;
+          }
+          .body-header-image{
+              background-image: url(https://i.imgur.com/emmBmBC.png), linear-gradient(111.49deg, #fa4769 18.98%, #FA4769 95.33%);
+              background-size: 100% auto;
+              border-radius: 20px;
+              background-position: left bottom;
+          }
+      }
+      @media (max-width: 375px) {
+          .body-header-image .subtitle-header{
+              margin-top: 28%;
+              width: 100%;
+          }
+      }
+
+      @media (max-width: 360px) {
+          .ping-code-code{
+              margin-left: 10px;
+              width: 100%;
+          }
+          .text-body {
+              padding: 0 15px;
+          }
+          .body-header-image .fs-35 {
+              font-size: 30px;
+          }
+      }
+
+      @media (max-width: 320px) {
+          .body-header-image .subtitle-header{
+              margin-top: 45%;
+              width: 100%;
+          }
+      }
+
+  </style>
+</head>
+<body>
+
+
+<table class="body-template" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+  <tr>
+    <td>
+      <div class="header">
+        <a href="/">
+          <img src="https://i.imgur.com/3RYzDXT.png" alt="logo" class="nt-logo-black">
+          <img src="https://i.imgur.com/zrOGiUM.png" alt="logo" class="nt-logo-white">
+        </a>
+        <a href="#" class="header-view-web">
+          view on web
+        </a>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="body-header">
+        <div class="body-header-image">
+          <h1>
+            <b class="fs-52">Women in business, this one's for you!</b>
+          </h1>
+          <span class="subtitle-header">Get <b>30% off</b> <br> on our plans! 🌹</span>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="text-body">
+        <p>
+          Hello lovely ladies!
+        </p>
+
+        <p>
+          On this International Women's Day, we want to celebrate the incredible women in business by offering a 30% discount on all our Native Teams plans for 6 months.
+        </p>
+
+        <p>
+          It's our way of saying thank you for all the hard work and dedication you do and help you expand your business globally!
+        </p>
+
+        <p>
+          Did you know that with Native Teams, you can:
+        </p>
+        <ul style="list-style: none" class="list">
+          <li>
+            <img src="https://i.imgur.com/gIP4LnD.png" alt="check" style="margin-right: 5px;" width="16" height="16">
+            Hire and pay overseas team members (or your local ones) with our hassle-free payroll solutions in 40+ countries
+          </li>
+          <li>
+            <img src="https://i.imgur.com/gIP4LnD.png" alt="check" style="margin-right: 5px;" width="16" height="16">
+            Sort work permits and visas for your team
+          </li>
+          <li>
+            <img src="https://i.imgur.com/gIP4LnD.png" alt="check" style="margin-right: 5px;" width="16" height="16">
+            Get full admin and tax support
+          </li>
+        </ul>
+        <p style="margin-top: 0;">
+          And much more!
+        </p>
+        <p>
+          Use the code <b>EMPOWERED23</b> at checkout to redeem your discount and take your freelancing business to the next level.
+        </p>
+        <div style="text-align: center">
+          <a href="#">
+            <button class="btn-now">Get the offer NOW</button>
+          </a>
+          <div class="ping-code">
+            <span class="ping-code-code">
+              <button class="ping-code-btn-code">EMPOWERED23</button>
+              <span class="ping-code-text">
+                Use the code <br>
+                to get a discount.
+              </span>
+            </span>
+          </div>
+        </div>
+        <p>
+          Hurry up! This offer ends on April 1st, 2023. Applicable to all women.
+        </p>
+        <p>
+          Happy Women's Day, ladies!
+        </p>
+        <p>
+          Native Teams
+        </p>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="footer" style="background: #1A1C31;width: 100%">
+        <div class="footer-body" style="padding: 84px 66px 36px 66px;">
+          <div class="footer-logo" style="text-align: center;">
+            <img src="https://i.imgur.com/ppyJVEL.png" alt="footer-logo">
+          </div>
+          <p class="footer-title" style="font-weight: 400;
+        font-size: 16px;
+        line-height: 200%;
+        text-align: center;
+        color: #CDD0D2;
+        margin-bottom: 50px;">We make today's world of work payments easier!</p>
+          <div class="footer-soc-site" style="text-align: center;
+        margin-bottom: 10px;">
+            <a href="#" style="margin-right: 5px;text-decoration: none !important;">
+              <img src="https://i.imgur.com/0gwutlg.png" alt="FB">
+            </a>
+            <a href="#" style="margin-right: 5px;text-decoration: none !important;">
+              <img src="https://i.imgur.com/DtGjR4Q.png" alt="insta">
+            </a>
+            <a href="#" style="margin-right: 5px;text-decoration: none !important;">
+              <img src="https://i.imgur.com/rhXFSYn.png" alt="LI">
+            </a>
+          </div>
+          <p class="footer-nt-name" style="font-weight: 400;
+        font-size: 14px;
+        line-height: 200%;
+        text-align: center;
+        color: #838A90;
+        margin-bottom: 50px;">© Native Teams Limited  </p>
+          <hr>
+          <p class="footer-bottom-text" style=" font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 200%;
+        color: #838A90;
+        margin-top: 20px;
+"> <a href="#" style=" color: #CDD0D2; text-decoration: underline;">Log In</a>   <span class="footer-close">·</span> <a href="#" style=" color: #CDD0D2; text-decoration: underline;">Help Center</a>   <span class="footer-close">·</span>
+            <a href="#" style=" color: #CDD0D2; text-decoration: underline;">Contact Us</a>   <span class="footer-close">·</span> <a href="#" class="footer-close" style=" color: #CDD0D2; text-decoration: underline;">Cookie Policy</a>   <span class="footer-close">·</span> <a class="footer-close" href="#" style=" color: #CDD0D2; text-decoration: underline;">Privacy Policy</a>   <span class="footer-close">·</span> <a href="#" class="footer-close" style=" color: #CDD0D2; text-decoration: underline;">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+
+</body>
+</html>
