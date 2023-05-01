@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+  <meta name=”x-apple-disable-message-reformatting”>
+  <title>Vuka Mail Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+      * {
+          font-family: 'Montserrat', sans-serif;
+          margin: 0;
+          padding: 0;
+      }
+
+
+      @media (max-width: 600px){
+          .content{
+              width: auto !important;
+              max-width: unset !important;
+              padding: 20px !important;
+              padding-bottom: 100px !important;
+          }
+          .content-header{
+              padding-top: 0 !important;
+          }
+          .header{
+              height: auto !important;
+          }
+          .vuka-start{
+              margin-top: 0 !important;
+          }
+          .header-title {
+              margin-top: 5px !important;
+          }
+          .footer{
+              width: auto !important;
+              max-width: unset !important;
+          }
+          .green-section{
+              width: auto !important;
+              max-width: unset !important;
+          }
+          .content-header{
+              display: block !important;
+              text-align: center;
+          }
+          .red-section{
+              display: block !important;
+          }
+          .vuka-logn{
+              margin-top: 10px !important;
+          }
+          .footer{
+              display: block !important;
+              text-align: center !important;
+              padding-top: 50px !important;
+          }
+          .red-section-item{
+              text-align: center !important;
+              margin-right: 0 !important;
+              margin-left: 0 !important;
+          }
+          .content-white-text{
+              text-align: center !important;
+          }
+          .red-section-item .mt-20{
+              margin-top: 20px !important;
+          }
+          .vuka-forte{
+              margin-right: 0 !important;
+          }
+          .content-header-text{
+              padding-top: 30px !important;
+          }
+          .content.bottom{
+              padding-bottom: 20px !important;
+          }
+          .footer-text{
+              width: 100% !important;
+              max-width: 100% !important;
+              min-width: 100% !important;
+              text-align: center !important;
+              margin-bottom: 20px !important;
+              padding-left: 0 !important;
+          }
+      }
+  </style>
+</head>
+<body style=" background: #E1E2E9;padding: 0">
+
+
+<table class="body-template" border="0" cellspacing="0" cellpadding="0" style="width: 100%;max-width: 600px;margin: 0 auto;">
+  <tbody>
+  <tr>
+    <td>
+      <div class="header" style="
+          width: 100%;
+          height: 187px;
+          background: url(https://i.imgur.com/qU5iKeu.png) no-repeat center center;
+          background-size: cover;">
+        <a href="#">
+          <img src="https://i.imgur.com/muynrQj.png" alt="Vuka-logo" class="logo-site" style="
+          float: right;
+          margin-right: 10px;
+          margin-top: 12px;">
+        </a>
+        <img src="https://i.imgur.com/2s0aG7h.png" alt="title" class="header-title" width="285" height="109" style="float: right;
+          margin-top: 22px;
+          margin-right: 5px;">
+        <img src="https://i.imgur.com/AyTwbwn.png" alt="img" class="vuka-start" style="
+          margin-top: 14px;
+          margin-left: 20px;">
+
+        <!--        <span class="header-subtitle">Секрет твоей силы</span>-->
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="green-section" style="width: 100%;
+          max-width: 560px;
+          background: #6BB99F;
+          padding: 26px 20px;
+          margin-top: -4px;">
+        <p class="green-section-subtitle" style="font-weight: 400;
+          font-size: 10px;
+          line-height: 12px;
+          text-align: center;
+          color: #FFFFFF;">
+          1.@{if IsEmpty(Recipient.OnlyStandardFirstName)}Здравствуйте,уважаемый коллега!@{else}Здравствуйте,${Recipient.FirstAndMiddleName }!@{end if}
+        </p>
+        <h3 class="green-section-title" style="font-weight: 600;
+          font-size: 15px;
+          line-height: 18px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          margin-top: 15px;">
+          STADA перезагружает линейку «Вука»
+        </h3>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="content" style="
+        width: 100%;
+          max-width: 500px;
+          background-size: cover;
+        background: #2A2A2A url(https://i.imgur.com/GTVPGMP.png) no-repeat center bottom;
+        padding: 0 50px 190px;
+        background-size: contain;
+">
+        <div class="content-header" style="display: flex;padding-top: 50px;">
+          <img src="https://i.imgur.com/jyL5XYi.png" alt="img" style="margin-right: 20px;" class="vuka-forte">
+          <div style="padding-top: 50px;" class="content-header-text">
+            <img src="https://i.imgur.com/LUgstSl.png" alt="img">
+            <div class="content-text" style="
+            font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #FFF;">
+              Комплекс для <span style="color: #fff">стимуляции либидо и потенции</span>, повышения выработки тестостерона; поддержания сердечной деятельности; замедления процессов клеточного старения и мужского климакса, нормализации массы тела; повышения адаптивности.
+            </div>
+          </div>
+        </div>
+        <img src="https://i.imgur.com/JXjvzzG.png" width="100%" alt="" style="margin-top: 18px;margin-bottom: 18px;">
+
+        <div class="red-section" style="display: flex;">
+          <div style="margin-right: 10px;" class="red-section-item">
+            <div>
+              <img src="https://i.imgur.com/hgTn9wg.png" alt="icon check">
+              <h3 class="red-section-title" style="font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #D8D8D8;">Экстракт женьшеня</h3>
+              <p class="content-text" style="font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #FFF;">
+                Согласно данным систематического обзора улучшает эректильную функцию18. Согласно КИ - потенциально успешное средство для предотвращения SARS-CoV-213. Согласно данным систематического обзора 2017 года «женьшень продемонстрировал благоприятное действие в отношении снижения артериального давления у пациентов с предгипертензией  и гипертонией»14.
+              </p>
+            </div>
+            <div style="margin-top: 20px;">
+              <img src="https://i.imgur.com/hgTn9wg.png" alt="icon check">
+              <h3 class="red-section-title" style="font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #D8D8D8;">Экстракт горянки, витамины B12, B6, B3, Е, Zn, фолиевая кислота</h3>
+            </div>
+          </div>
+          <div style="margin-left: 10px;" class="red-section-item">
+            <div class="mt-20">
+              <img src="https://i.imgur.com/hgTn9wg.png" alt="icon check">
+              <h3 class="red-section-title" style="font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #D8D8D8;">Экстракты ореха колы и гуараны</h3>
+              <p class="content-text" style="font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #FFF;">
+                Повышают работоспособность и либидо15, повышают уровень тестостерона16.
+              </p>
+            </div>
+            <div style="margin-top: 20px;">
+              <img src="https://i.imgur.com/hgTn9wg.png" alt="icon check">
+              <h3 class="red-section-title" style="font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #D8D8D8;">L-карнитин: </h3>
+              <p class="content-text" style="font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #FFF;">
+                Повышает работоспособность, обеспечивает кардиопротекцию17. Способствует снижению избыточной массы тела18. Стимулирует сперматогенез, улучшает эректильную функцию19. Согласно данным КИ является «потенциальным вариантом устранения последствий усталости, вызванной COVID-19»20,21.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="content" style="
+      width: 100%;
+          max-width: 500px;
+      background: #2A2A2A url(https://i.imgur.com/A2iZAtQ.png) no-repeat center bottom;
+      padding: 0 50px 130px;
+      background-size: contain;
+">
+        <div class="content-header" style="display: flex;padding-top: 30px;">
+          <div>
+            <img src="https://i.imgur.com/x49Y7pp.png" alt="img" style="margin-left: -5px;">
+            <p class="content-text" style="font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #FFF;">
+              Комплекс для увеличения увеличения длительности секса, усиления яркости оргазма (при стертости оргазма) и улучшения сексуальной функции.
+            </p>
+          </div>
+          <img class="vuka-logn" src="https://i.imgur.com/7zVm68T.png" alt="img" style="margin-top: -50px;">
+        </div>
+        <img src="https://i.imgur.com/JXjvzzG.png" width="100%" alt="" style="margin-top: 18px;margin-bottom: 18px;">
+        <p class="content-white-text" style="font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          color: #FFFFFF;">
+          <b>Дисрегуляция синтеза серотонина является ведущей причиной преждевременной эякуляции <sup>22</sup>. <br><br></b>
+          <b>Аминокислоты (L-изолейцин, L-тирозин, L-глутамин, L- триптофан) в синергии с витамином В6 и магнием</b> являются предшественниками синтеза или активаторами действия серотонина<sup>23-28-</sup>, тем самым подавляющими нейросенсорные факторы развития преждевременной эякуляции и способствующими поддержанию продолжительности полового акта. Данные аминокислоты за счет регуляции синтеза серотонина могут активировать работу центров удовлетворённости, уменьшать проявление депрессивного фона, стресса и улучшать настроение.
+        </p>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="content " style="
+          width: 100%;
+          max-width: 500px;
+          background: #2A2A2A url(https://i.imgur.com/DammsPL.png) no-repeat center bottom;
+          padding: 0 50px 215px;
+            background-size: contain;
+">
+        <div class="content-header" style="display: flex;padding-top: 30px;">
+          <div>
+            <img src="https://i.imgur.com/SJjn35R.png" alt="img" style="margin-left: -5px;">
+            <p class="content-text" style="font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #FFF;">
+              Комплекс для увеличения увеличения длительности секса, усиления яркости оргазма (при стертости оргазма) и улучшения сексуальной функции.
+            </p>
+          </div>
+          <img src="https://i.imgur.com/Ew1ETGU.png" alt="img" style="margin-top: -50px;" class="vuka-logn">
+        </div>
+        <img src="https://i.imgur.com/JXjvzzG.png" width="100%" alt="" style="margin-top: 18px;margin-bottom: 18px;">
+        <h3 class="content-title" style="font-weight: 700;
+          font-size: 20px;
+          line-height: 24px;
+          text-align: center;
+          color: #FFFFFF;">
+          Последние научные данные по компонентам комплекса подтверждают следующее действие данных компонентов:
+        </h3>
+        <div class="red-section" style="margin-top: 20px;display: flex;">
+          <div style="margin-right: 10px;" class="red-section-item">
+            <div>
+              <img src="https://i.imgur.com/YIYM60w.png" alt="icon check">
+              <h3 class="red-section-title" style="font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #D8D8D8;">Экстракт горянки (икариин)</h3>
+              <p class="content-text" style="font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #FFF;">
+                Согласно систематическому обзору 2021г. данных по природным средствам, улучшающим эректильную функцию, икариин из экстракта горянки был отмечен как «наиболее эффективный из природных источников ингибитор иФДЭ-5»1. Экстракт горянки способствует повышению синтеза  и усилению эффектов тестостерона2 + обладает тонизирующим действием.
+              </p>
+            </div>
+            <div style="margin-top: 20px;">
+              <img src="https://i.imgur.com/YIYM60w.png" alt="icon check">
+              <h3 class="red-section-title" style="font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #D8D8D8;">Экстракт эврикомы длиннолистой</h3>
+              <p class="content-text" style="font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #FFF;">
+                В систематических обзорах 2014 и 2017 гг. эврикома подтвердила свое благотворное действие при эректильной дисфункции5,6. В исследованиях было подтверждено повышающее работоспособность действие, увеличение мышечной силы7 и общего самочувствия8.
+              </p>
+            </div>
+            <div style="margin-top: 20px;">
+              <img src="https://i.imgur.com/YIYM60w.png" alt="icon check">
+              <h3 class="red-section-title" style="font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #D8D8D8;">Витамины В12, В6, В3, Е, В9, Se, Zn </h3>
+              <p class="content-text" style="font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #FFF;">
+                Для поддержания энергетического, жирового обмена мужчин и стероидогенеза.
+              </p>
+            </div>
+          </div>
+          <div style="margin-left: 10px;" class="red-section-item">
+            <div class="mt-20">
+              <img src="https://i.imgur.com/YIYM60w.png" alt="icon check">
+              <h3 class="red-section-title" style="font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #D8D8D8;">Экстракт колеуса (форсколин)</h3>
+              <p class="content-text" style="font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #FFF;">
+                Согласно исследованиям, за счет увеличения цАМФ улучшает потенцию, сердечную деятельность, способствует повышению синтеза эндогенного тестостерона3. Согласно систематическому обзору исследований 2016 года «экстракт C. forskohlii показал существенное влияние на потерю веса и был безопасным и эффективным в снижении жировых отложений у людей с избыточным весом/ожирением»4.
+              </p>
+            </div>
+            <div style="margin-top: 20px;">
+              <img src="https://i.imgur.com/YIYM60w.png" alt="icon check">
+              <h3 class="red-section-title" style="font-weight: 400;
+          font-size: 20px;
+          line-height: 24px;
+          color: #D8D8D8;"> Ресвератрол</h3>
+              <p class="content-text" style="font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          color: #FFF;">
+                Антиоксидант, поддерживающий здоровье сердечно-сосудистой системы, способствующий нормализации массы тела9, улучшению потенции10, повышению адаптации и мышечной силы при нагрузках11. В РКИ применялся и оказывал благотворное действие при легком течении COVID-19 инфекции и long-COVID12.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="content bottom" style="
+          width: 100%;
+          max-width: 500px;
+          padding: 0 50px;
+          background: #2a2a2a;
+">
+        <p class="content-text-bottom" style="font-weight: 400;
+          font-size: 6px;
+          line-height: 100%;
+          text-align: justify;
+          color: #FFF;">
+          1. Anand Ganapathy A, Hari Priya VM, Kumaran A. Medicinal plants as a potential source of Phosphodiesterase-5 inhibitors: A review. J Ethnopharmacol. 2021 Mar 1;267:113536. doi: 10.1016/j.jep.2020.113536. Epub 2020 Nov 1. PMID: 33137431.
+          <br>
+          2. Niu Y, Lin G, Pan J, Liu J, Xu Y, Cai Q, Wang T, Luan Y, Chen Y, Feng Y, Yang X, Tian W, Bae WJ, Guan R, Xin Z. Deciphering the myth of icariin and synthetic derivatives in improving erectile function from a molecular biology perspective: a narrative review. Transl Androl Urol. 2022 Jul;11(7):1007-1022. doi: 10.21037/tau-22-232. PMID: 35958901; PMCID: PMC9360520.<br>
+          3. Godard MP, Johnson BA, Richmond SR. Body composition and hormonal adaptations associated with forskolin consumption in overweight and obese men. Obes Res. 2005 Aug;13(8):1335-43. doi: 10.1038/oby.2005.162. PMID: 16129715.<br>
+          4. Seika Kamohara. An evidence-based review: Anti-obesity effects of Coleus forskohlii, Personalized Medicine Universe, Volume 5, 2016, Pages 16-20, ISSN 2186-4950, https://doi.org/10.1016/j.pmu.2016.02.001 (https://www.sciencedirect.com/science/article/pii/S2186495016000055)
+          5. Kotirum S., Ismail S.B., Chaiacunapruk N. Efficacy of Tongkat Ali (Eurycoma longifolia) on erectile function improvement: systematic review and meta-analysis of randomized controlled trials. Complement Ther Med 2015; 23(5):693–8. DOI: 10.1016/j. ctim.2015.07.009. PMID: 26365449.<br>
+          6. Thu H.E., Mohamed I.N., Hussain Z. et al. Eurycoma Longifolia as a potential adoptogen of male sexual health: a systematic review on clinical studies. Chin J Nat Med 2017;15(1):71–80. DOI: 10.1016/S1875-5364(17)30010-9. PMID: 28259255.<br>
+          7. Henkel, R.R., Wang, R., Bassett, S.H., Chen T., Liu, N., Zhu, Y., and Tambi, M.I. Tongkat ali as a potential herbal supplement for physically active male and female seniors—A pilot study. Phytother Res 2014; 28:544–550.<br>
+          8. Udani, J.K., George, A.A., Musthapa, M., Pakdaman, M.N., and Abas, A. Effects of a proprietary freeze-dried water extract of Eurycoma longifolia (Physta) and Polygonum minus on sexual performance and wellbeing in men: A randomized, double-blind, placebo-controlled study. Evid Based Complement Alternat Med 2014; Article ID 179529:10pp.<br>
+          9. Melville GW, Siegler JC, Marshall PWM. The effects of d-aspartic acid supplementation in resistance-trained men over a three month training period: A randomised controlled trial. PLoS One. 2017 Aug 25;12(8):e0182630. doi: 10.1371/journal.pone.0182630. PMID: 28841667; PMCID: PMC5571970.<br>
+          10. <a style="color: #FFF;" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5340133/#B40">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5340133/#B40</a>
+          11. Cheng HM, Koutsidis G, Lodge JK, Ashor A, Siervo M, Lara J. Tomato and lycopene supplementation and cardiovascular risk factors: A systematic review and meta-analysis. Atherosclerosis. 2017 Feb;257:100-108. doi: 10.1016/j.atherosclerosis.2017.01.009. Epub 2017 Jan 13. PMID: 28129549.<br>
+          12. <a style="color: #FFF;" href="https://pubmed.ncbi.nlm.nih.gov/?term=lycopene+erectile+functions">https://pubmed.ncbi.nlm.nih.gov/?term=lycopene+erectile+functions</a><br>
+          13. Khongthaw B, Dulta K, Chauhan PK, Kumar V, Ighalo JO. Lycopene: a therapeutic strategy against coronavirus disease 19 (COVID- 19). Inflammopharmacology. 2022 Dec;30(6):1955-1976. doi: 10.1007/s10787-022-01061-4. Epub 2022 Sep 1. PMID: 36050507; PMCID: PMC9436159.<br>
+          14. Tabrizi R, Tamtaji OR, Lankarani KB, Akbari M, Dadgostar E, Dabbaghmanesh MH, Kolahdooz F, Shamshirian A, Momen-Heravi M, Asemi Z. The effects of resveratrol intake on weight loss: a systematic review and meta-analysis of randomized controlled trials. Crit Rev Food Sci Nutr. 2020;60(3):375-390. doi: 10.1080/10408398.2018.1529654. Epub 2018 Nov 13. PMID: 30421960.<br>
+          15. <a style="color: #FFF;" href="https://pubmed.ncbi.nlm.nih.gov/?term=resveratrol+erectile+function">https://pubmed.ncbi.nlm.nih.gov/?term=resveratrol+erectile+function</a><br>
+          16. Alway SE, McCrory JL, Kearcher K, Vickers A, Frear B, Gilleland DL, Bonner DE, Thomas JM, Donley DA, Lively MW, Mohamed JS. Resveratrol Enhances Exercise-Induced Cellular and Functional Adaptations of Skeletal Muscle in Older Men and Women. J Gerontol A Biol Sci Med Sci. 2017 Nov 9;72(12):1595-1606. doi: 10.1093/gerona/glx089. PMID: 28505227; PMCID: PMC5861947.<br>
+          17. McCreary MR, Schnell PM, Rhoda DA. Randomized double-blind placebo-controlled proof-of-concept trial of resveratrol for outpatient treatment of mild coronavirus disease (COVID-19). Sci Rep. 2022 Jun 29;12(1):10978. doi: 10.1038/s41598-022-13920-9. PMID: 35768453; PMCID: PMC9243086.<br>
+          18. Jang DJ, Lee MS, Shin BC, Lee YC, Ernst E. Red ginseng for treating erectile dysfunction: a systematic review. Br J Clin Pharmacol. 2008 Oct;66(4):444-50. doi: 10.1111/j.1365-2125.2008.03236.x. Epub 2008 Jun 9. PMID: 18754850; PMCID: PMC2561113.<br>
+          19. Ratan ZA, Rabbi Mashrur F, Runa NJ, Kwon KW, Hosseinzadeh H, Cho JY. Ginseng, a promising choice for SARS-COV-2: A mini review. J Ginseng Res. 2022 Mar;46(2):183-187. doi: 10.1016/j.jgr.2022.01.004. Epub 2022 Jan 22. PMID: 35095288; PMCID: PMC8783644.<br>
+          20. Lee HW, Lim HJ, Jun JH, Choi J, Lee MS. Ginseng for Treating Hypertension: A Systematic Review and Meta-Analysis of Double Blind, Randomized, Placebo-Controlled Trials. Curr Vasc Pharmacol. 2017;15(6):549-556. doi: 10.2174/1570161115666170713092701. PMID: 28707603.<br>
+          21. Starin D. Kola nut: so much more than just a nut. J R Soc Med. 2013 Dec;106(12):510-2. doi: 10.1177/0141076813507708. Epub 2013 Oct 24. PMID: 24158941; PMCID: PMC3842857.<br>
+          22. Adisa WA, Otamere HO, Osifo CU, Idonije OB, Nwoke EO. Effects of aqueous extract of kola nut (Cola Nitida Rubra) on reproductive hormones in rats. Niger J Physiol Sci. 2010 Nov 28;25(2):121-3. PMID: 22314949.<br>
+          23. d'Unienville NMA, Blake HT, Coates AM, Hill AM, Nelson MJ, Buckley JD. Effect of food sources of nitrate, polyphenols, L-arginine and L-citrulline on endurance exercise performance: a systematic review and meta-analysis of randomised controlled trials. J Int Soc Sports Nutr. 2021 Dec 29;18(1):76. doi: 10.1186/s12970-021-00472-y. PMID: 34965876; PMCID: PMC8715640.<br>
+          24. Talenezhad N, Mohammadi M, Ramezani-Jolfaie N, Mozaffari-Khosravi H, Salehi-Abargouei A. Effects of l-carnitine supplementation on weight loss and body composition: A systematic review and meta-analysis of 37 randomized controlled clinical trials with dose-response analysis. Clin Nutr ESPEN. 2020 Jun;37:9-23. doi: 10.1016/j.clnesp.2020.03.008. Epub 2020 Apr 18. PMID: 32359762.<br>
+          25. <a style="color: #FFF;" href="https://pubmed.ncbi.nlm.nih.gov/?term=l-carnitine+erectile+function&filter=pubt.randomizedcontrolledtrial">https://pubmed.ncbi.nlm.nih.gov/?term=l-carnitine+erectile+function&filter=pubt.randomizedcontrolledtrial</a> <br>
+          26. Vaziri-Harami R, Delkash P. Can l-carnitine reduce post-COVID-19 fatigue? Ann Med Surg (Lond). 2022 Jan;73:103145. doi: 10.1016/j.amsu.2021.103145. Epub 2021 Dec 13. PMID: 34925826; PMCID: PMC8667465.<br>
+          27. Li C, Ou R, Wei Q, Shang H. Carnitine and COVID-19 Susceptibility and Severity: A Mendelian Randomization Study. Front Nutr. 2021 Nov 25;8:780205. doi: 10.3389/fnut.2021.780205. PMID: 34901126; PMCID: PMC8656944.<br>
+          28. <a style="color: #FFF;" href="https://uroweb.ru/article/sovremennie-aspekti-diagnostiki-i-lecheniya-pregdevremennoy-eyakulyatsii-megdistsiplinarniy-urologicheskiy-konsilium">https://uroweb.ru/article/sovremennie-aspekti-diagnostiki-i-lecheniya-pregdevremennoy-eyakulyatsii-megdistsiplinarniy-urologicheskiy-konsilium</a><br>
+          29. Carneiro IBC, Toscano AE, Lacerda DC, da Cunha MSB, de Castro RM, Deiró TCBJ, Medeiros JMB. L-tryptophan administration and increase in cerebral serotonin levels: Systematic review. Eur J Pharmacol. 2018 Oct 5;836:129-135. doi: 10.1016/j.ejphar.2018.08.009. Epub 2018 Aug 8. PMID: 30098308.<br>
+          30. Bagchi SP, Bagchi P, Smith TM. Release of synaptosomal dopamine formed from tyrosine and L-DOPA. Brain Res. 1980 Apr 14;187(2):403-14. doi: 10.1016/0006-8993(80)90211-5. PMID: 7370738<br>
+          31. Nikoobakht MR, Aloosh M, Hasani M. Seminal plasma magnesium and premature ejaculation: a case-control study.// Urol J. 2005 Spring;2(2):102-5.<br>
+          32. Aloosh M, Hassani M, Nikoobakht M. Seminal plasma magnesium and premature ejaculation: a case-control study. // BJU Int. 2006 Aug;98(2):402-4. PMID: 16879686 [PubMed — indexed for MEDLINE]<br>
+          33. Omu AE, Al-Bader AA, Dashti H, Oriowo MA. Magnesium in human semen: possible role in premature ejaculation. // Arch Androl. 2001 Jan-Feb;46(1):59-66<br>
+        </p>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="footer" style="width: 100%;
+          max-width: 500px;
+          background: #2a2a2a url(https://i.imgur.com/bQtso7b.png) no-repeat center bottom;
+          background-size: cover;
+          display: flex;
+          padding: 35px 50px 20px 50px;">
+        <div class="footer-text" style="font-weight: 500;
+          font-size: 10px;
+          line-height: 12px;
+          color: #FFFFFF;;max-width: 165px">
+          АО «Нижфарм», 603105, РФ, г. Нижний Новгород, ул.Салганская, 7
+        </div>
+        <div class="footer-text" style="font-weight: 500;
+          font-size: 10px;
+          line-height: 12px;
+          color: #FFFFFF;width: 130px; padding-left: 20px;">
+          Реклама <br>
+          POS-20250410-0484
+        </div>
+        <div class="footer-text" style="font-weight: 500;
+          font-size: 10px;
+          line-height: 12px;
+          color: #FFFFFF;width: 180px; padding-left: 20px;">
+          Дата выпуска: <br>
+          апрель 2023 г.
+        </div>
+        <img src="https://i.imgur.com/2IReN0O.png" alt="footer-image" width="53" height="42" >
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+
+</body>
+</html>
